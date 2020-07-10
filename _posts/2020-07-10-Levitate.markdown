@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "WHY SWIFT?"
+date:   2020-07-10 16:24:22 +0000
+categories: All about Swift
+---
+Swift is a fantastic way of writing software whether for mobile phones, desktops, server or anything that runs code. It is a fast, safe and interactive programming language combining the best of modern programming languages whiles being friendly to beginner programmers.
+
+It was introduced during the WWDC14 (Apple world wide developer conference 2014). Before that, most application for Apple platforms were written in Objective-C.
+
+## FEATURES
+# Swift is a modern language
+* It has a clean syntax which makes code readable and easy to work with.
+* Swift has type inference which helps the compiler catch some common issues during development.
+* Adopts some functional programming patterns which helps simplify code which otherwise would require multiple lines of code.
+*Supports generics which enables code reusability.
+
+# Swift is open source
+Open development means Swift is evolving and improving due to the diverse wisdom from its contributors in the open source community. With this you can be confident that your swift knowledge will be valuable as the language continues to grow and evolve.
+
+# Terminal 
+MacOs comes with a console app called Terminal with comes with a tool called REPL(Read, Eval , Print Loop). This allow you to enter commands, evaluate them and print results. To use REPL to write your first swift program
+* Open Terminal by searching "Terminal" in your spotlight
+* Enter swift REPL by typing `swift` in the terminal and pressing ENTER
+* Type the command `print("Hello, World")` and press ENTER to execute it. 
+* To quit, type `:q` and press Enter.
+
+# Playground
+Xcode, the primary IDE for swift developers comes with a powerful document type that runs swift code with easily visible results
+Playgrounds give Swift developers the flexibility to experiment with code which particularly helpful for Swift beginners.
+
+# SwiftUI 
+SwiftUI is apple declarative framework for buiding user interfaces. With SwiftUI, you can write code that runs on all of Apple's platforms. (One ring to rule them all 😎)
+
+
