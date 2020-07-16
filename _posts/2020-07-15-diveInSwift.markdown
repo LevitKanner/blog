@@ -6,7 +6,7 @@ categories: All about Swift
 ---
 # BASICS
 
-In order to be proficient in a programming language, one has to write and read a lot of code written in it. This can not be done when you do not understand the language's basic syntax and keywords. 
+In order to be proficient in a programming language, one has to read and write a lot of code written in it. This can not be done when you do not understand the language's basic syntax and keywords. 
 
 We will be diving into swift to understand the symbols and keywords that are available to help you get started writing some swift code. 
 
@@ -89,7 +89,10 @@ Represents a series of characters such as "hello, World".
 //For Single line string literal surround with single double quotation marks
 let hello = "Hello, World" 
 
-// For Multiline String literal surround with three double quotation marks
+/* For Multiline String literal surround with three double quotation marks
+Note: The string must begin on the first line after the opening quotation marks and end on the line 
+before the closing quotation marks
+*/
 let greetings = """
 The big brown fox
 jumped over 
@@ -180,6 +183,12 @@ if let status = responseCode {
 > **Note**  
 Swift provides two identity operators (`===`) & (`!==`) to test if two object references point to the same object instance.
 
+
+#### Logical Operators 
+* Not: `!a`
+* And: `&&`
+* Or: `||`
+
 #### Ternary Condition Operator
 The ternary operator is an operator with three parts which takes the form `condition ? action1 : action2.
 
@@ -209,4 +218,42 @@ let value: Int? = nil
 print(value ?? 10) //prints 10
 
 {% endhighlight %}
+> The nil-coalescing operator is the shorthand for
+{% highlight swift %}
+a != nil ? a! : b
+//reads if a is not nil, return force-unwrapped a else return b
+{% endhighlight %}  
 
+#### Range Operators
+* **Closed Range:**  
+(a...b) defines a range that runs from a to b. The value of a must be greater than b.
+{% highlight swift %}
+for number in 1...5 {
+    print(number)
+}
+//prints 1, 2, 3, 4, 5
+{% endhighlight %} 
+
+* **Half-Opened Range:**  
+(a ..< b) defines a range that runs from a to b but doesn't include b.
+ {% highlight swift %}
+for number in 1..<5 {
+    print(number)
+}
+print 1, 2, 3, 4
+{% endhighlight %}
+
+* **One-Sided Range:**
+Defines a ranges that continues as far as possible in one direction
+{% highlight swift %}
+let languages = ["swift", "rust", "python", "javascript"]
+for language in languages[...2]{
+    print(language)
+}
+//prints "swift", "rust", "python"
+
+for language in languages[1...]{
+    print(language)
+}
+//prints "rust" , "python", "javascript"
+{% endhighlight %}
