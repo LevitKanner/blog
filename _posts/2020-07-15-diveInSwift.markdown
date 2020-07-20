@@ -257,3 +257,60 @@ for language in languages[1...]{
 }
 //prints "rust" , "python", "javascript"
 {% endhighlight %}
+
+## Collection Types 
+
+### Arrays
+Ordered collection of values. 
+{% highlight swift %}
+//Creating an empty array 
+var languages = [String]()  //Creates an empty string array
+
+//Creating an array with default values
+let languages = ["swift", "rust", "python", "javascript"] //Creates a string array with default values
+
+{% endhighlight %} 
+
+**Accessing Array Elements**
+{% highlight swift %}
+//Creating an empty array 
+let firstItem = languages[0]
+let firstTwoItems = languages[0...1]
+print(firstItem) //prints swift
+print(firstTwoItems) //prints ["swift", "rust"]
+{% endhighlight %} 
+
+### Sets 
+Unordered collections of unique values. Use sets instead of arrays when the order of items isn't important or when items are meant to appear only once. 
+{% highlight swift %}
+//Creating an empty set 
+var usernames = Set<String>()
+
+//creating a set with default values 
+let usernames: Set<String> = ["levit", "kanner"]
+{% endhighlight %} 
+
+**Removing duplicates in an array**
+{% highlight swift %}
+let duplicates = [1, 2, 2, 1]
+let noDuplicates = Array(Set(duplicates)) //creates a set from duplicates and converts it back to an array
+print(noDuplicates) //prints [1, 2]
+{% endhighlight %}
+
+
+### Dictionaries
+Dictionaries store unordered collections of key-value associations.
+{% highlight swift %}
+//Creating an empty dictionary 
+var agesOfStudents = [String: Int]()  //Creates an empty [String: Int] dictionary
+agesOfStudent["dan"] = 16  //agesOfStudents now contains 1 key-value pair
+
+//Creating a dictionary with default values
+let dict: [String : Int] = ["dan": 16, "king": 20, "sarah": 19]
+{% endhighlight %}
+
+**Accessing Dictionary Elements**
+{% highlight swift %}
+let danAge = dict["dan"]
+print(danAge) //prints 16
+{% endhighlight %}
