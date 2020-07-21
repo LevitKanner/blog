@@ -13,7 +13,10 @@ It was introduced during the WWDC14 (Apple world wide developer conference 2014)
 * It has a clean syntax which makes code readable and easy to work with.
 * Swift has type inference which helps the compiler catch some common issues during development.
 * Adopts some functional programming patterns which helps simplify code which otherwise would require multiple lines of code.
-*Supports generics which enables code reusability.
+* Supports generics which enables code reusability.
+* Optionals, a way of expressing that a value may be absent. 
+* Type safety enforces code that is less likely to crash your program. 
+* Automatic Reference counting for memory management to handle some challenges in native programming. 
 
 # Swift is open source
 Open development means Swift is evolving and improving due to the diverse wisdom from its contributors in the open source community. With this you can be confident that your swift knowledge will be valuable as the language continues to grow and evolve.

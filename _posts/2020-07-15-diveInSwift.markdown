@@ -67,7 +67,7 @@ comment
 */
 ```
 
-## Data Types 
+## DATA TYPES
 * #### Integers
     * **Int**: holds whole numbers with no fractional components such as 30, -18.  
     `let age: Int = 20 //Declares an integer constant`
@@ -167,7 +167,7 @@ if let status = responseCode {
 {% endhighlight %}
 
 
-## Basic Operators
+## BASIC OPERATORS
 #### Arithmetic 
 * Addition: `+`
 * Subtraction: `-`
@@ -258,7 +258,7 @@ for language in languages[1...]{
 //prints "rust" , "python", "javascript"
 {% endhighlight %}
 
-## Collection Types 
+## COLLECTION TYPES
 
 ### Arrays
 Ordered collection of values. 
@@ -314,3 +314,43 @@ let dict: [String : Int] = ["dan": 16, "king": 20, "sarah": 19]
 let danAge = dict["dan"]
 print(danAge) //prints 16
 {% endhighlight %}
+
+## FLOW CONTROL
+### For-In Loop
+Use for-in loop to iterate over sequence such as arrays, ranges, characters in a string. You can also iterate over a dictionary to access its key-value pairs.
+{% highlight swift %}
+//Iterating over a range
+for number in 1...5 {
+    print(number)
+}
+//Iterating over a dictionary
+let dict: [String : Int] = ["dan": 16, "king": 20, "sarah": 19]
+for (name, age) in dict {
+    print("\(name) is \(age) years old")
+}
+{% endhighlight %} 
+
+### While Loops
+While loops run as long as a condition holds. While loops come in two forms; while and repeat-while. 
+* while evaluates its condition at the start of each pass through 
+* repeat-while evaluates its condition at the end of each pass throught. It is therefore guaranteed to run at least once. 
+
+**While**
+{% highlight swift %}
+var names = ["Dan", "King", "Sarah", "Hilson"]  //declared as variable for manipulation
+while names.count > 1 {
+    //Removes the last item from names as long as names.count is greater than 1
+    let name = names.popLast()   
+    print(name!)
+}
+{% endhighlight %}
+**Repeat-while**
+{% highlight swift %}
+var names = ["Dan", "King", "Sarah", "Hilson"]
+ repeat{
+    //Removes the last item from names as long as names.count is greater than 1
+    let name = names.popLast()   
+    print(name!)
+}while names.count > 1
+{% endhighlight %}
+
