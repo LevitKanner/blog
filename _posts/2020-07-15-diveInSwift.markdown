@@ -354,3 +354,32 @@ var names = ["Dan", "King", "Sarah", "Hilson"]
 }while names.count > 1
 {% endhighlight %}
 
+### Conditional Statements
+Execute code based on certain conditions. 
+
+**If**  
+The if statement has a single condition and executes code only if that condition is true.
+{% highlight swift %}
+let temperature = 25 
+if temperature <= 30 {
+    print("It's cold")
+}
+//prints It's cold
+{% endhighlight %}
+
+**Switch**  
+A switch statement takes a value and compares it against one or more values of the same type. 
+{% highlight swift %}
+let letter = "a"
+switch temperature {
+    case "a": 
+    print("The first letter of the alphabets")
+    case "z": 
+    print("The last letter of the alphabets")
+    default: 
+    print("The letter is somewhere in between a and z")
+}
+//prints The first letter of the alphabets
+{% endhighlight %}
+> **Note**  
+The every switch statement must be exhaustive. That is, every possible value of the type being considered must be matched by one of the switch cases. Provide a default case if it's not appropriate to provide a case for every possibility using the `default` keyword.
