@@ -383,3 +383,23 @@ switch temperature {
 {% endhighlight %}
 > **Note**  
 The every switch statement must be exhaustive. That is, every possible value of the type being considered must be matched by one of the switch cases. Provide a default case if it's not appropriate to provide a case for every possibility using the `default` keyword.
+
+## FUNCTIONS
+Functions are blocks of code that perform a specific task. Names given to functions are used to identify what they do. Functions are called to perform their tasks by their names.  
+    Every function in swift has a type consisting of the function's parameter types and return type. This type can be used like any other type in swift which makes it possible to pass functions are parameters to other functions and return functions from functions.
+{% highlight swift %}
+/*
+this function is called sayHello(to person:) because that is what it does.
+It takes a person's name as input and returns a greeting string.
+*/
+func sayHello(to person: String) -> String {
+    return "Hello, \(person)"
+}
+
+//Calling the function 
+sayHello(to: "Levit")   //returns Hello, Levit
+sayHello(to: "Swift")  //returns Hello, Swift
+
+//Printing out the return value 
+print(sayHello(to: "Levit"))   //Hello, Levit
+{% endhighlight %}
